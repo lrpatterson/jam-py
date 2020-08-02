@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<!doctype html>
+<html lang="en"><head>
     <meta charset="utf-8">
     <title>Application builder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,11 +17,11 @@
     <iframe src="dummy.html" name="dummy" style="display: none"></iframe>
 
     <div class="container">
-        <div class="row-fluid">
-            <div class="span6">
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
                 <span id="project-mode" style="font-weight: bold;"></span>
             </div>
-            <div class="span6" style="text-align:right;">
+            <div class="col-sm-6 col-md-6" style="text-align:right;">
                 <span id="user-info"></span>
                 <a href="#" id="log-out" style="margin-right: 10px; display: none">Logout</a>
             </div>
@@ -35,7 +34,7 @@
                 <div id="tab-content">
                     <div id="admin" class="tab-pane active">
                         <table class="table-fixed">
-                            <tr>
+                            <tbody><tr>
                                 <td id="left-panel" class="td-panel" style="width: 240px; padding-right: 10px">
                                     <div id="tree-panel" class="side-panel">
                                     </div>
@@ -49,12 +48,12 @@
                                     </div>
                                 </td>
                             </tr>
-                        </table>
+                        </tbody></table>
                     </div>
                     <div id="code-editor" class="tab-pane" style="height: 100%; display: none">
                         <div>
                             <table class="table-fixed">
-                                <tr>
+                                <tbody><tr>
                                     <td id="left-box" class="td-panel" style="width: 250px; padding: 4px">
                                         <div id="editor-tabs">
                                             <ul class="nav nav-tabs editor">
@@ -70,11 +69,11 @@
                                         </div>
                                     </td>
                                 </tr>
-                            </table>
+                            </tbody></table>
                         <div class="modal-footer">
                             <span id="error-info" class="code_error pull-left"></span>
-                            <button type="button" id="find-btn" class="btn"><i class="icon-search"></i> find_in_task<small class="muted">&nbsp;[Alt+F]</small></button>
-                            <button type="button" id="ok-btn" class="btn"><i class="icon-ok"></i> OK<small class="muted">&nbsp;[Ctrl+S]</small></button>
+                            <button type="button" id="find-btn" class="btn btn-default"><i class="icon-search"></i> find_in_task<small class="text-muted">&nbsp;[Alt+F]</small></button>
+                            <button type="button" id="ok-btn" class="btn btn-default"><i class="icon-ok"></i> OK<small class="text-muted">&nbsp;[Ctrl+S]</small></button>
                         </div>
                     </div>
                 </div>
@@ -86,19 +85,19 @@
 
         <div class="catalogs-view details-view">
             <div class="modal-body">
-                <div class="row-fluid title">
-                    <div id="title-left" class="span6"></div>
-                    <div id="title-right" class="text-right span6"></div>
+                <div class="title row">
+                    <div id="title-left" class="col-sm-6 col-md-6"></div>
+                    <div id="title-right" class="text-right col-sm-6 col-md-6"></div>
                 </div>
                 <div class="view-table">
                 </div>
             </div>
             <div class="modal-footer">
-                <button id="delete-btn" class="btn expanded-btn pull-left" type="button"><i class="icon-trash"></i> Delete<small class="muted">&nbsp;[Ctrl+Del]</small></button>
-                <button id="edit-btn" class="btn expanded-btn" type="button"><i class="icon-edit"></i> Edit</button>
-                <button id="new-btn" class="btn expanded-btn" type="button"><i class="icon-plus"></i> New<small class="muted">&nbsp;[Ctrl+Ins]</small></button>
+                <button id="delete-btn" class="btn expanded-btn pull-left btn-default" type="button"><i class="icon-trash"></i> Delete<small class="text-muted">&nbsp;[Ctrl+Del]</small></button>
+                <button id="edit-btn" class="btn expanded-btn btn-default" type="button"><i class="icon-edit"></i> Edit</button>
+                <button id="new-btn" class="btn expanded-btn btn-default" type="button"><i class="icon-plus"></i> New<small class="text-muted">&nbsp;[Ctrl+Ins]</small></button>
                 <div id="report-btn" class="btn-group dropup">
-                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                    <a class="btn dropdown-toggle btn-default" data-toggle="dropdown" href="#">
                         <i class="icon-print"></i> Reports
                         <span class="caret"></span>
                     </a>
@@ -111,20 +110,20 @@
         <div class="journals-view">
             <div class="modal-body">
                 <div class="view-title">
-                    <div class="row-fluid">
-                        <div id="title-left" class="span8"></div>
-                        <div id="title-right" class="text-right span4"></div>
+                    <div class="row">
+                        <div id="title-left" class="col-sm-8 col-md-8"></div>
+                        <div id="title-right" class="text-right col-sm-4 col-md-4"></div>
                     </div>
                 </div>
                 <div class="view-table">
                 </div>
             </div>
             <div class="modal-footer">
-                <button id="delete-btn" class="btn expanded-btn pull-left" type="button"><i class="icon-trash"></i> Delete<small class="muted">&nbsp;[Ctrl+Del]</small></button>
-                <button id="edit-btn" class="btn expanded-btn" type="button"><i class="icon-edit"></i> Edit</button>
-                <button id="new-btn" class="btn expanded-btn" type="button"><i class="icon-plus"></i> New<small class="muted">&nbsp;[Ctrl+Ins]</small></button>
+                <button id="delete-btn" class="btn expanded-btn pull-left btn-default" type="button"><i class="icon-trash"></i> Delete<small class="text-muted">&nbsp;[Ctrl+Del]</small></button>
+                <button id="edit-btn" class="btn expanded-btn btn-default" type="button"><i class="icon-edit"></i> Edit</button>
+                <button id="new-btn" class="btn expanded-btn btn-default" type="button"><i class="icon-plus"></i> New<small class="text-muted">&nbsp;[Ctrl+Ins]</small></button>
                 <div id="report-btn" class="btn-group dropup">
-                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                    <a class="btn dropdown-toggle btn-default" data-toggle="dropdown" href="#">
                         <i class="icon-print"></i> Reports
                         <span class="caret"></span>
                     </a>
@@ -137,25 +136,25 @@
         <div class="sys_items-view">
             <div class="modal-body">
                 <div class="title">
-                    <div class="row-fluid title">
-                        <div id="title-left" class="span4"></div>
-                        <div id="title-right" class="text-right span8"></div>
+                    <div class="title row">
+                        <div id="title-left" class="col-sm-4 col-md-4"></div>
+                        <div id="title-right" class="text-right col-sm-8 col-md-8"></div>
                     </div>
-                    <div class="row-fluid">
-                        <div class="header-search span12"></div>
+                    <div class="row">
+                        <div class="header-search col-sm-12 col-md-12"></div>
                     </div>
                 </div>
                 <div class="view-table">
                 </div>
             </div>
             <div class="modal-footer">
-                <button id="delete-btn" class="btn expanded-btn pull-left" type="button"><i class="icon-trash"></i> Delete<small class="muted">&nbsp;[Ctrl+Del]</small></button>
+                <button id="delete-btn" class="btn expanded-btn pull-left btn-default" type="button"><i class="icon-trash"></i> Delete<small class="text-muted">&nbsp;[Ctrl+Del]</small></button>
 
-                <button type="button" id="up-btn" class="btn arrow_btn up-down-btn"><i class="icon-arrow-up"></i></button>
-                <button type="button" id="down-btn" class="btn arrow_btn up-down-btn"><i class="icon-arrow-down"></i></button>
-                <button id="import-btn" class="btn expanded-btn" type="button"> Import</button>
-                <button id="edit-btn" class="btn expanded-btn" type="button"><i class="icon-edit"></i> Edit</button>
-                <button id="new-btn" class="btn expanded-btn" type="button"><i class="icon-plus"></i> New<small class="muted">&nbsp;[Ctrl+Ins]</small></button>
+                <button type="button" id="up-btn" class="btn arrow_btn up-down-btn btn-default"><i class="icon-arrow-up"></i></button>
+                <button type="button" id="down-btn" class="btn arrow_btn up-down-btn btn-default"><i class="icon-arrow-down"></i></button>
+                <button id="import-btn" class="btn expanded-btn btn-default" type="button"> Import</button>
+                <button id="edit-btn" class="btn expanded-btn btn-default" type="button"><i class="icon-edit"></i> Edit</button>
+                <button id="new-btn" class="btn expanded-btn btn-default" type="button"><i class="icon-plus"></i> New<small class="text-muted">&nbsp;[Ctrl+Ins]</small></button>
             </div>
         </div>
 
@@ -165,7 +164,7 @@
                 </div>
             </div>
             <div class="modal-footer" style="text-align: center">
-                <button type="button" id="create-btn" class="btn"> Create</button>
+                <button type="button" id="create-btn" class="btn btn-default"> Create</button>
             </div>
         </div>
 
@@ -175,26 +174,26 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button id="import-btn" class="btn expanded-btn" type="button"> Import</button>
+                <button id="import-btn" class="btn expanded-btn btn-default" type="button"> Import</button>
             </div>
         </div>
 
         <div class="sys_filters-view sys_report_params-view sys_field_lookups-view">
             <div class="modal-body">
-                <div class="row-fluid">
-                    <div id="title-left" class="span4"></div>
-                    <div id="title-right" class="text-right span8"></div>
+                <div class="row">
+                    <div id="title-left" class="col-sm-4 col-md-4"></div>
+                    <div id="title-right" class="text-right col-sm-8 col-md-8"></div>
                 </div>
                 <div class="view-table">
                 </div>
             </div>
             <div class="modal-footer">
-                <button id="delete-btn" class="btn expanded-btn pull-left" type="button"><i class="icon-trash"></i> Delete<small class="muted">&nbsp;[Ctrl+Del]</small></button>
+                <button id="delete-btn" class="btn expanded-btn pull-left btn-default" type="button"><i class="icon-trash"></i> Delete<small class="text-muted">&nbsp;[Ctrl+Del]</small></button>
 
-                <button type="button" id="up-btn" class="btn arrow_btn up-down-btn"><i class="icon-arrow-up"></i></button>
-                <button type="button" id="down-btn" class="btn arrow_btn up-down-btn"><i class="icon-arrow-down"></i></button>
-                <button id="edit-btn" class="btn expanded-btn" type="button"><i class="icon-edit"></i> Edit</button>
-                <button id="new-btn" class="btn expanded-btn" type="button"><i class="icon-plus"></i> New<small class="muted">&nbsp;[Ctrl+Ins]</small></button>
+                <button type="button" id="up-btn" class="btn arrow_btn up-down-btn btn-default"><i class="icon-arrow-up"></i></button>
+                <button type="button" id="down-btn" class="btn arrow_btn up-down-btn btn-default"><i class="icon-arrow-down"></i></button>
+                <button id="edit-btn" class="btn expanded-btn btn-default" type="button"><i class="icon-edit"></i> Edit</button>
+                <button id="new-btn" class="btn expanded-btn btn-default" type="button"><i class="icon-plus"></i> New<small class="text-muted">&nbsp;[Ctrl+Ins]</small></button>
             </div>
         </div>
 
@@ -206,36 +205,36 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button id="delete-btn" class="btn expanded-btn pull-left" type="button"><i class="icon-trash"></i> Delete<small class="muted">&nbsp;[Ctrl+Del]</small></button>
-                <button id="edit-btn" class="btn expanded-btn" type="button"><i class="icon-edit"></i> Edit</button>
-                <button id="new-btn" class="btn expanded-btn" type="button"><i class="icon-plus"></i> New<small class="muted">&nbsp;[Ctrl+Ins]</small></button>
+                <button id="delete-btn" class="btn expanded-btn pull-left btn-default" type="button"><i class="icon-trash"></i> Delete<small class="text-muted">&nbsp;[Ctrl+Del]</small></button>
+                <button id="edit-btn" class="btn expanded-btn btn-default" type="button"><i class="icon-edit"></i> Edit</button>
+                <button id="new-btn" class="btn expanded-btn btn-default" type="button"><i class="icon-plus"></i> New<small class="text-muted">&nbsp;[Ctrl+Ins]</small></button>
             </div>
         </div>
 
         <div class="sys_roles-view">
             <div class="modal-body">
                 <div class="view-title">
-                    <div class="row-fluid">
-                        <div id="title-left" class="span6"></div>
-                        <div id="title-right" class="text-right span6"></div>
+                    <div class="row">
+                        <div id="title-left" class="col-sm-6 col-md-6"></div>
+                        <div id="title-right" class="text-right col-sm-6 col-md-6"></div>
                     </div>
                 </div>
                 <div>
-                    <div class="row-fluid">
-                        <div id="roles-panel" class="span4">
+                    <div class="row">
+                        <div id="roles-panel" class="col-sm-4 col-md-4">
                             <div class="view-table">
                             </div>
                             <div id="roles-footer" class="modal-footer">
-                                <button id="delete-btn" class="btn expanded-btn pull-left" type="button"><i class="icon-trash"></i> Delete</button>
-                                <button id="new-btn" class="btn expanded-btn" type="button"><i class="icon-plus"></i> New</button>
+                                <button id="delete-btn" class="btn expanded-btn pull-left btn-default" type="button"><i class="icon-trash"></i> Delete</button>
+                                <button id="new-btn" class="btn expanded-btn btn-default" type="button"><i class="icon-plus"></i> New</button>
                             </div>
                         </div>
-                        <div id="priv-panel" class="span8">
+                        <div id="priv-panel" class="col-sm-8 col-md-8">
                             <div class="view-table">
                             </div>
                             <div class="modal-footer">
-                                <button id="unselect-all-btn" class="btn expanded-btn" type="button"><i class="icon-minus"></i> Unselect all</button>
-                                <button id="select-all-btn" class="btn expanded-btn" type="button"><i class="icon-plus"></i> Select all</button>
+                                <button id="unselect-all-btn" class="btn expanded-btn btn-default" type="button"><i class="icon-minus"></i> Unselect all</button>
+                                <button id="select-all-btn" class="btn expanded-btn btn-default" type="button"><i class="icon-plus"></i> Select all</button>
                             </div>
                         </div>
                     </div>
@@ -245,16 +244,16 @@
 
         <div class="sys_privileges-view">
             <div class="modal-body">
-                <div class="row-fluid">
-                    <div id="title-left" class="span6"></div>
-                    <div id="title-right" class="text-right span6"></div>
+                <div class="row">
+                    <div id="title-left" class="col-sm-6 col-md-6"></div>
+                    <div id="title-right" class="text-right col-sm-6 col-md-6"></div>
                 </div>
                 <div class="view-table">
                 </div>
             </div>
             <div class="modal-footer">
-                <button id="unselect-all-btn" class="btn expanded-btn" type="button"><i class="icon-minus"></i> Unselect all</button>
-                <button id="select-all-btn" class="btn expanded-btn" type="button"><i class="icon-plus"></i> Select all</button>
+                <button id="unselect-all-btn" class="btn expanded-btn btn-default" type="button"><i class="icon-minus"></i> Unselect all</button>
+                <button id="select-all-btn" class="btn expanded-btn btn-default" type="button"><i class="icon-plus"></i> Select all</button>
             </div>
         </div>
 
@@ -276,7 +275,7 @@
                 </ul>
                 <div id="form" style="display: none">
                     <table class="table-fixed">
-                        <tr>
+                        <tbody><tr>
                             <td id="form_options-box" class="td-panel" style="width: 300px">
 <!--
                                 <h5 class="text-center">Parameters</h5>
@@ -286,22 +285,22 @@
                             <td id="templates-box" class="td-panel" style="width: auto; padding: 4px">
                             </td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </div>
                 <div id="layout">
                     <ul class="nav nav-tabs" id="field-tabs" style="display: none; min-height: 37px">
                         <div id="tab-btns" class="pull-right">
-                            <button type="button" id="add-tab-btn" class="btn arrow_btn up-down-btn"><i class="icon-plus"></i></button>
-                            <button type="button" id="edit-tab-btn" class="btn arrow_btn up-down-btn"><i class="icon-edit"></i></button>
-                            <button type="button" id="delete-tab-btn" class="btn arrow_btn up-down-btn"><i class="icon-trash"></i></button>
+                            <button type="button" id="add-tab-btn" class="btn arrow_btn up-down-btn btn-default"><i class="icon-plus"></i></button>
+                            <button type="button" id="edit-tab-btn" class="btn arrow_btn up-down-btn btn-default"><i class="icon-edit"></i></button>
+                            <button type="button" id="delete-tab-btn" class="btn arrow_btn up-down-btn btn-default"><i class="icon-trash"></i></button>
                         </div>
                     </ul>
                     <table class="table-fixed">
-                        <tr>
+                        <tbody><tr>
                             <td id="bands-box" class="td-panel" style="display: none; width: 94px">
                                 <div>
-                                    <button type="button" id="add-band-btn" class="btn arrow_btn up-down-btn"><i class="icon-plus"></i></button>
-                                    <button type="button" id="delete-band-btn" class="btn arrow_btn up-down-btn"><i class="icon-trash"></i></button>
+                                    <button type="button" id="add-band-btn" class="btn arrow_btn up-down-btn btn-default"><i class="icon-plus"></i></button>
+                                    <button type="button" id="delete-band-btn" class="btn arrow_btn up-down-btn btn-default"><i class="icon-trash"></i></button>
                                 </div>
                                 <div class="tabbable tabs-left">
                                     <ul class="nav nav-tabs" id="field-bands">
@@ -312,20 +311,20 @@
                                 <div id="fields-container">
                                 </div>
                                 <table class="table-fixed">
-                                    <tr>
+                                    <tbody><tr>
                                         <td id="left-box" class="td-panel" style="width: 280px; padding: 4px">
                                             <div id="fields-editor">
                                                 <div id="left-grid" class="fields-grid"></div>
                                                 <div id="vert-btns-box">
-                                                    <button type="button" id="up-btn" class="btn arrow_btn up-down-btn"><i class="icon-arrow-up"></i></button>
-                                                    <button type="button" id="down-btn" class="btn arrow_btn up-down-btn"><i class="icon-arrow-down"></i></button>
+                                                    <button type="button" id="up-btn" class="btn arrow_btn up-down-btn btn-default"><i class="icon-arrow-up"></i></button>
+                                                    <button type="button" id="down-btn" class="btn arrow_btn up-down-btn btn-default"><i class="icon-arrow-down"></i></button>
                                                 </div>
                                             </div>
                                         </td>
                                         <td id="center-box" class="td-panel" style="width: 50px">
                                             <div id="btns-box">
-                                                <button type="button" id="left-btn" class="btn arrow_btn left-right-btn"><i class="icon-arrow-left"></i></button>
-                                                <button type="button" id="right-btn" class="btn arrow_btn left-right-btn"><i class="icon-arrow-right"></i></button>
+                                                <button type="button" id="left-btn" class="btn arrow_btn left-right-btn btn-default"><i class="icon-arrow-left"></i></button>
+                                                <button type="button" id="right-btn" class="btn arrow_btn left-right-btn btn-default"><i class="icon-arrow-right"></i></button>
                                             </div>
                                         </td>
                                         <td id="right-box" class="td-panel" style="width: 280px; padding: 4px">
@@ -338,15 +337,15 @@
                                             <div id="options-div"></div>
                                         </td>
                                     </tr>
-                                </table>
+                                </tbody></table>
                             </td>
                         </tr>
-                    </table>
+                    </tbody></table>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" id="ok-btn" class="btn expanded-btn"><i class="icon-ok"></i> OK<small class="muted">&nbsp;[Enter]</small></button>
-                <button type="button" id="cancel-btn" class="btn expanded-btn"><i class="icon-remove"></i> Cancel<small class="muted">&nbsp;[Esc]</small></button>
+                <button type="button" id="ok-btn" class="btn expanded-btn btn-default"><i class="icon-ok"></i> OK<small class="text-muted">&nbsp;[Enter]</small></button>
+                <button type="button" id="cancel-btn" class="btn expanded-btn btn-default"><i class="icon-remove"></i> Cancel<small class="text-muted">&nbsp;[Esc]</small></button>
             </div>
         </div>
 
@@ -358,7 +357,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button id="select-btn" class="btn btn expanded-btn" type="button">Select<small class="muted">&nbsp;[Enter]</small></button>
+                <button id="select-btn" class="btn btn expanded-btn btn-default" type="button">Select<small class="text-muted">&nbsp;[Enter]</small></button>
             </div>
         </div>
 
@@ -366,25 +365,25 @@
             <div class="modal-body">
                 <div class="view-title"></div>
                 <table class="table-fixed">
-                    <tr>
+                    <tbody><tr>
                         <td id="center-box" class="td-panel" style="width: auto">
                             <div class="view-table langs-table">
                             </div>
                         </td>
                         <td id="right-box" class="td-panel" style="width: 220px; padding: 4px">
                             <div class="text-center">
-                                <button id="select-btn" class="btn vert-btn" type="button">Select</button>
+                                <button id="select-btn" class="btn vert-btn btn-default" type="button">Select</button>
                                 <div class="btns-divider"></div>
-                                <button id="edit-btn" class="btn vert-btn" type="button">Edit</button>
-                                <button id="new-btn" class="btn vert-btn" type="button">New</button>
+                                <button id="edit-btn" class="btn vert-btn btn-default" type="button">Edit</button>
+                                <button id="new-btn" class="btn vert-btn btn-default" type="button">New</button>
                                 <div class="btns-divider"></div>
-                                <button id="import-btn" class="btn vert-btn"> Import</button>
-                                <button id="export-btn" class="btn vert-btn"> Export</button>
+                                <button id="import-btn" class="btn vert-btn btn-default"> Import</button>
+                                <button id="export-btn" class="btn vert-btn btn-default"> Export</button>
 
                             </div>
                         </td>
                     </tr>
-                </table>
+                </tbody></table>
             </div>
         </div>
 
@@ -399,8 +398,8 @@
                 <div class="edit-body"></div>
             </div>
             <div class="modal-footer">
-                <button type="button" id="new-btn" class="btn expanded-btn pull-left" style="display: none"> New</button>
-                <button type="button" id="delete-btn" class="btn expanded-btn pull-left" style="display: none"> Delete</button>
+                <button type="button" id="new-btn" class="btn expanded-btn pull-left btn-default" style="display: none"> New</button>
+                <button type="button" id="delete-btn" class="btn expanded-btn pull-left btn-default" style="display: none"> Delete</button>
             </div>
         </div>
 
@@ -410,8 +409,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" id="ok-btn" class="btn expanded-btn"><i class="icon-ok"></i> OK<small class="muted">&nbsp;[Ctrl+Enter]</small></button>
-                <button type="button" id="cancel-btn" class="btn expanded-btn"><i class="icon-remove"></i> Cancel<small class="muted">&nbsp;[Esc]</small></button>
+                <button type="button" id="ok-btn" class="btn expanded-btn btn-default"><i class="icon-ok"></i> OK<small class="text-muted">&nbsp;[Ctrl+Enter]</small></button>
+                <button type="button" id="cancel-btn" class="btn expanded-btn btn-default"><i class="icon-remove"></i> Cancel<small class="text-muted">&nbsp;[Esc]</small></button>
             </div>
         </div>
 
@@ -424,8 +423,8 @@
 <!--
                 <button type="button" id="sk-btn" class="btn expanded-btn pull-left"> Change secret key</button>
 -->
-                <button type="button" id="ok-btn" class="btn expanded-btn"><i class="icon-ok"></i> OK<small class="muted">&nbsp;[Ctrl+Enter]</small></button>
-                <button type="button" id="cancel-btn" class="btn expanded-btn"><i class="icon-remove"></i> Cancel<small class="muted">&nbsp;[Esc]</small></button>
+                <button type="button" id="ok-btn" class="btn expanded-btn btn-default"><i class="icon-ok"></i> OK<small class="text-muted">&nbsp;[Ctrl+Enter]</small></button>
+                <button type="button" id="cancel-btn" class="btn expanded-btn btn-default"><i class="icon-remove"></i> Cancel<small class="text-muted">&nbsp;[Esc]</small></button>
             </div>
         </div>
 
@@ -462,44 +461,44 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" id="ok-btn" class="btn expanded-btn"><i class="icon-ok"></i> OK<small class="muted">&nbsp;[Ctrl+Enter]</small></button>
-                <button type="button" id="cancel-btn" class="btn expanded-btn"><i class="icon-remove"></i> Cancel<small class="muted">&nbsp;[Esc]</small></button>
+                <button type="button" id="ok-btn" class="btn expanded-btn btn-default"><i class="icon-ok"></i> OK<small class="text-muted">&nbsp;[Ctrl+Enter]</small></button>
+                <button type="button" id="cancel-btn" class="btn expanded-btn btn-default"><i class="icon-remove"></i> Cancel<small class="text-muted">&nbsp;[Esc]</small></button>
             </div>
         </div>
 
         <div class="sys_items-edit">
             <div class="modal-body">
-                <div class="edit-body row-fluid">
+                <div class="edit-body row">
                 </div>
                 <div class="edit-detail">
                 </div>
             </div>
             <div id="edit-detail-footer" class="modal-footer">
-                <button id="delete-btn" class="btn expanded-btn pull-left" type="button">Delete<small class="muted">&nbsp;[Ctrl+Del]</small></button>
-                <button id="edit-btn" class="btn expanded-btn" type="button">Edit</button>
-                <button id="new-btn" class="btn expanded-btn" type="button">New<small class="muted">&nbsp;[Ctrl+Ins]</small></button>
+                <button id="delete-btn" class="btn expanded-btn pull-left btn-default" type="button">Delete<small class="text-muted">&nbsp;[Ctrl+Del]</small></button>
+                <button id="edit-btn" class="btn expanded-btn btn-default" type="button">Edit</button>
+                <button id="new-btn" class="btn expanded-btn btn-default" type="button">New<small class="text-muted">&nbsp;[Ctrl+Ins]</small></button>
             </div>
             <div id="edit-footer" class="modal-footer">
-                <button type="button" id="ok-btn" class="btn expanded-btn">OK<small class="muted">&nbsp;[Ctrl+Enter]</small></button>
-                <button type="button" id="cancel-btn" class="btn expanded-btn">Cancel<small class="muted">&nbsp;[Esc]</small></button>
+                <button type="button" id="ok-btn" class="btn expanded-btn btn-default">OK<small class="text-muted">&nbsp;[Ctrl+Enter]</small></button>
+                <button type="button" id="cancel-btn" class="btn expanded-btn btn-default">Cancel<small class="text-muted">&nbsp;[Esc]</small></button>
             </div>
         </div>
 
         <div class="sys_lookup_lists-edit">
             <div class="modal-body">
-                <div class="edit-body row-fluid">
+                <div class="edit-body row">
                 </div>
                 <div class="edit-detail">
                 </div>
             </div>
             <div id="edit-detail-footer" class="modal-footer">
-                <button id="delete-btn" class="btn expanded-btn pull-left" type="button">Delete</button>
-                <button id="edit-btn" class="btn expanded-btn" type="button">Edit</button>
-                <button id="new-btn" class="btn expanded-btn" type="button">New</button>
+                <button id="delete-btn" class="btn expanded-btn pull-left btn-default" type="button">Delete</button>
+                <button id="edit-btn" class="btn expanded-btn btn-default" type="button">Edit</button>
+                <button id="new-btn" class="btn expanded-btn btn-default" type="button">New</button>
             </div>
             <div id="edit-footer" class="modal-footer">
-                <button type="button" id="ok-btn" class="btn expanded-btn">OK</button>
-                <button type="button" id="cancel-btn" class="btn expanded-btn">Cancel</button>
+                <button type="button" id="ok-btn" class="btn expanded-btn btn-default">OK</button>
+                <button type="button" id="cancel-btn" class="btn expanded-btn btn-default">Cancel</button>
             </div>
         </div>
 
@@ -509,8 +508,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" id="ok-btn" class="btn expanded-btn"><i class="icon-print"></i> Print</button>
-                <button type="button" id="cancel-btn" class="btn expanded-btn"><i class="icon-remove"></i> Close</button>
+                <button type="button" id="ok-btn" class="btn expanded-btn btn-default"><i class="icon-print"></i> Print</button>
+                <button type="button" id="cancel-btn" class="btn expanded-btn btn-default"><i class="icon-remove"></i> Close</button>
             </div>
         </div>
 
@@ -520,26 +519,26 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" id="ok-btn" class="btn expanded-btn"><i class="icon-filter"></i> Apply</button>
-                <button type="button" id="cancel-btn" class="btn expanded-btn"><i class="icon-remove"></i> Close</button>
+                <button type="button" id="ok-btn" class="btn expanded-btn btn-default"><i class="icon-filter"></i> Apply</button>
+                <button type="button" id="cancel-btn" class="btn expanded-btn btn-default"><i class="icon-remove"></i> Close</button>
             </div>
         </div>
 
         <form id="login-form" target="dummy" class="form-horizontal" data-caption="Log in" style="margin: 10px 0 0; padding: 0px">
-            <div class="control-group">
+            <div class="form-group">
                 <label class="control-label" for="inputLoging">Login</label>
                 <div class="controls">
-                    <input type="text" id="inputLoging" name="username" tabindex="1" placeholder="login">
+                    <input type="text" id="inputLoging" name="username" tabindex="1" placeholder="login" class="form-control">
                 </div>
             </div>
-            <div class="control-group">
+            <div class="form-group">
                 <label class="control-label" for="inputPassword">Password</label>
                 <div class="controls">
-                    <input type="password" id="inputPassword" name="password" tabindex="2" placeholder="password">
+                    <input type="password" id="inputPassword" name="password" tabindex="2" placeholder="password" class="form-control">
                 </div>
             </div>
             <div class="modal-footer">
-                <input type="submit" class="btn expanded-btn" id="login-btn" value="OK" tabindex="3">
+                <input type="submit" class="btn expanded-btn form-control btn-default" id="login-btn" value="OK" tabindex="3">
             </div>
         </form>
 
@@ -561,5 +560,5 @@
       });
     </script>
 
-  </body>
-</html>
+  
+</div></body></html>
